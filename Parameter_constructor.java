@@ -19,7 +19,9 @@ public class Parameter_constructor
 	public static void main(String args[])
 	{
 		Parameter_constructor c1 = new Parameter_constructor(1,"Prakash SIngh Rajput");
+		Parameter_constructor c2 = new Parameter_constructor(2,"Jyoti Singh");
 		c1.display();
+		c2.display();
 	}
 
 }
