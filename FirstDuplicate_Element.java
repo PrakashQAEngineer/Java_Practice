@@ -18,9 +18,10 @@ public class FirstDuplicate_Element
 				}
 			}
 			
-			if(temp>1)
+			if(temp>0)
 				break;
 		}
 	}
 
 }
+
