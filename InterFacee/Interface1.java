@@ -5,7 +5,7 @@ interface i1
 	void show();  // complier will auto add the public abstract
 	public abstract void data();
 	
-	public static void meth()
+	public static   void meth()
 	{
 		System.out.println("here we can define with the use of static");
 	}
@@ -13,9 +13,14 @@ interface i1
 
 interface i2
 {
-	public static void anima()
+	default void anima()
 	{
 		System.out.println("This is the animal");
+	}
+	
+	public static  void running()
+	{
+		System.out.println("This is the animal is rujuning");
 	}
 	
 	public abstract void calling();
@@ -46,6 +51,7 @@ public class Interface1 implements i1 ,i2
 		i.show();
 		i1.meth();  // we can call directly because the method is static
 		i.calling();  //this is the multiple inheritance
+		i2.running();
 	}
 
 }
